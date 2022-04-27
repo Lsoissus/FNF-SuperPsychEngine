@@ -1,0 +1,19 @@
+name: Showcase
+description: Showcase something to people who view the Issues tab
+labels: [showcase]
+body:
+  - type: textarea
+    attributes:
+      label: "What are you showcasing?"
+      description: 'For example: I created a custom options!"'
+    validations:
+      required: true
+  - type: dropdown
+    id: modding
+    attributes:
+      label: "Did you create the code with source or with Lua?"
+      options:
+        - Lua
+        - Source
+    validations:
+      required: true
